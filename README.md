@@ -9,6 +9,9 @@
 
 ## Run on docker
 ```
+    // UP
     cd src
-    docker-compose -f docker-compose.yml up
+    docker-compose up --force-recreate -d
+    // DOWN
+    docker-compose down
 ```
