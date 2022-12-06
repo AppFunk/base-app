@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  public-web:
+    container_name: public-web
+    image: public-web-image
+    build:
+      context: ./public/base-public
+    ports:
+      - 8080:80
+  private-web:
+    container_name: private-web
+    image: private-web-image
+    build:
+      context: ./private/base-private
+    ports:
+      - 8081:80
