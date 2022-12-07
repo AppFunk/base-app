@@ -8,10 +8,11 @@
 
 
 ## Run on docker
+UP
 ```
-    // UP
-    cd src
-    docker-compose up --force-recreate -d
-    // DOWN
+    docker-compose up --build -d
+```
+DOWN
+```
     docker-compose down
 ```
